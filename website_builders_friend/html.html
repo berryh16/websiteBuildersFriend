@@ -45,21 +45,14 @@
   		color: white;
 		}
 
-	    #editor { 
-        position: fixed;
-        left: 10px;
-	top: 250px;
-	bottom: 200px;
-	right: 745px;
-    }
+		#editor {
+   		    height: 300px;
+   		}
 
-#return{
-		position: fixed;
-		top: 200px;
-		left: 625px; 
-		bottom: 200px;
-		right: 60px;
+		#return{
+		    height: 300px;
 		}
+
 
 		.btn {
   		border: none;
@@ -81,7 +74,8 @@
 	</style>
 	</head>
 	<body style="background-color:#E6E6E6" "height:4000px;">
-                
+                		
+<div class="container">
 		<h1>Website Builders Friend</h1>
 
 		<div class="topnav">
@@ -95,13 +89,15 @@
 		<a href="python.html">Python</a>
 		<a href="postgresql.html">PostgreSQL</a>
 		</div> 
-		
+    <div class="panel panel-default">
+        <div class="panel-heading">
 		<p>Alright so HTML stands for HyperText Markup Language it is used for the basic skeleton of your web page.
 		<br>It consists of tags that look like &ltp>(open tag) &lt/p>(close tag). The &ltp> tag is used in the body to 
 		<br>indicate a new paraagraph. This tag will display what you type inside of the tags to you page.
 		</p>
-		
-<div id="editor">&lt!DOCTYPE html>
+        </div>
+        <div class="panel-body">
+            <div id="editor">&lt!DOCTYPE html>
 &lthtml>
 	&lthead>
 		&lttitle>TEST&lt/title>
@@ -111,13 +107,8 @@
 	&lt/body>
 &lt/html>
 </div>
-<script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
-    editor.session.setMode("ace/mode/html");
-</script>
-
-<button onclick="runCode()" id="btn">run</button>
+        </div>
+    </div>
 <div id="return">
 <script type="text/javascript">
 window.onload=function(){
@@ -125,6 +116,15 @@ window.onload=function(){
 };
 </script>
 </div>
+<button onclick="runCode()" id="btn">run</button>
+</div>
+
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/html");
+</script>
+
 		<script>
 		function runCode(){
 			$('#return').html("<iframe src=" + "data:text/html," + encodeURIComponent(editor.getValue()) + " width='677px' height='400px'></iframe>");
