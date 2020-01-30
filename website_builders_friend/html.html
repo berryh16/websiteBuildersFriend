@@ -47,27 +47,18 @@
 
 		#editor {
    		    height: 300px;
+		    width: 550px;
+		    float: left;
    		}
 
 		#return{
 		    height: 300px;
+		    float: right;
 		}
 
 
-		.btn {
-  		border: none;
-  		background-color: #ff0;
-  		padding: 14px 28px;
-  		font-size: 16px;
-  		cursor: pointer;
-  		display: none;
-		position: fixed;
-		top: 100px;
-		right: 20px;
-		border-radius: 2px;
-		z-index: 99;
-		outline: none;
-		color: red;
+		.button {
+  		   background-color:#4CAF50;
 		}
 		
 		
@@ -108,16 +99,17 @@
 &lt/html>
 </div>
         </div>
-    </div>
-<div id="return">
+    <div id="return">
 <script type="text/javascript">
 window.onload=function(){
   document.getElementById("btn").click();
 };
 </script>
+    </div>
 </div>
-<button onclick="runCode()" id="btn">run</button>
+<button onclick="runCode()" id="btn" class="button">run</button>
 </div>
+
 
 <script>
     var editor = ace.edit("editor");
@@ -127,7 +119,7 @@ window.onload=function(){
 
 		<script>
 		function runCode(){
-			$('#return').html("<iframe src=" + "data:text/html," + encodeURIComponent(editor.getValue()) + " width='677px' height='400px'></iframe>");
+			$('#return').html("<iframe src=" + "data:text/html," + encodeURIComponent(editor.getValue()) + " width='550px' height='300px'></iframe>");
 		}
 		</script>
 
