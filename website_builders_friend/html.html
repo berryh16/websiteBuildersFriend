@@ -47,7 +47,7 @@
 
 		#editor {
    		    height: 300px;
-		    width: 550px;
+		    width: 500px;
 		    float: left;
    		}
 
@@ -76,10 +76,10 @@
   		<a href="javascript.html">JavaScript</a>
 		<a href="jquery.html">Jquery</a>
 		<a href="reactjs.html">ReactJS</a>
-		<a href="flask.html">Flask</a>
 		<a href="python.html">Python</a>
+		<a href="flask.html">Flask</a>
 		<a href="postgresql.html">PostgreSQL</a>
-		</div> 
+		</div>
     <div class="panel panel-default">
         <div class="panel-heading">
 		
@@ -101,7 +101,9 @@
 
         <h2>Try it yourself!</h2>
         <div class="panel-body">
-            <div id="editor">&lt!DOCTYPE html>
+			<div class="row">
+				<div class="col">
+            		<div id="editor">&lt!DOCTYPE html>
 &lthtml>
 	&lthead>
 		&lttitle>TEST&lt/title>
@@ -110,31 +112,37 @@
 		&ltp>Stuff&lt/p>
 	&lt/body>
 &lt/html>
-</div>
-        </div>
-    <div id="return">
-<script type="text/javascript">
-window.onload=function(){
-  document.getElementById("btn").click();
-};
-</script>
-    </div>
-</div>
-<button onclick="runCode()" id="btn" class="button">run</button>
-</div>
+</div><!--Needs to be hear so that we don't get stupid shit in editor on page-->
+				</div>
+				<div class="col">
+    				<div id="return">
+						<script type="text/javascript">
+							window.onload=function(){
+ 							document.getElementById("btn").click();
+							};
+						</script>
+    				</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p></p>
+			<button onclick="runCode()" id="btn" class="button">run</button>
+		</div>
+	</div>
 
 
-<script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
-    editor.session.setMode("ace/mode/html");
-</script>
+	<script>
+    	var editor = ace.edit("editor");
+    	editor.setTheme("ace/theme/monokai");
+    	editor.session.setMode("ace/mode/html");
+	</script>
 
-		<script>
+	<script>
 		function runCode(){
 			$('#return').html("<iframe src=" + "data:text/html," + encodeURIComponent(editor.getValue()) + " width='550px' height='300px'></iframe>");
 		}
-		</script>
+	</script>
 
 	</body>
 </html>
