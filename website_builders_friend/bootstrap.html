@@ -47,7 +47,7 @@
 
 		#editor {
    		    height: 300px;
-		    width: 500px;
+		    width: 625px;
 		    float: left;
    		}
 
@@ -66,7 +66,7 @@
 	</head>
 	<body style="background-color : #000">
                 		
-<div class="container" style="color:#4CAF50">
+<div class="container-fluid" style="color:#4CAF50">
 		<h1>Website Builders Friend</h1>
 
 		<div class="topnav">
@@ -116,7 +116,7 @@
 		&ltbody>
 
 			&ltdiv class="jumbotron text-center" style="margin-bottom:0">
-				&lth1>My First Bootstrap 4 Page&lt/h1>
+				&lth1>Page Heading&lt/h1>
 				&ltp>Resize this responsive page to see the effect!&lt/p> 
 			&lt/div>
 
@@ -128,10 +128,10 @@
 				&ltdiv class="collapse navbar-collapse" id="collapsibleNavbar">
 					&ltul class="navbar-nav">
 						&ltli class="nav-item">
-							&lta class="nav-link" href="#">Link&lt/a>
+							&lta class="nav-link" href="#">Link&lt/a>&lt!-- You can include links here-->
 						&lt/li>
 						&ltli class="nav-item">
-							&lta class="nav-link" href="#">Link&lt/a>
+							&lta class="nav-link" href="#">Link&lt/a>&lt!-- These will typically be links to other pages on this site-->
 						&lt/li>
 						&ltli class="nav-item">
 							&lta class="nav-link" href="#">Link&lt/a>
@@ -142,34 +142,38 @@
 
 			&ltdiv class="container" style="margin-top:30px">
 				&ltdiv class="row">
+					&ltdiv class = "col-sm-8">
+						&lth2>Section heading&lt/h2>
+						&ltp>Webpage text content can go here&lt/p>
+					&lt/div>
 					&ltdiv class="col-sm-4">
-						&lth2>About Me&lt/h2>
-						&lth5>Photo of me:&lt/h5>
-						&ltdiv class="fakeimg">Fake Image&lt/div>
-							&ltp>Some text about me in culpa qui officia deserunt mollit anim..&lt/p>
-							&lth3>Some Links&lt/h3>
-							&ltp>Lorem ipsum dolor sit ame.&lt/p>
-							&ltul class="nav nav-pills flex-column">
-								&ltli class="nav-item">
-									&lta class="nav-link active" href="#">Active&lt/a>
-								&lt/li>
-								&ltli class="nav-item">
-									&lta class="nav-link" href="#">Link&lt/a>
-								&lt/li>
-								&ltli class="nav-item">
-									&lta class="nav-link" href="#">Link&lt/a>
-								&lt/li>
-								&ltli class="nav-item">
-									&lta class="nav-link disabled" href="#">Disabled&lt/a>
-								&lt/li>
-							&lt/ul>
+						&lth5>Image title:&lt/h5>
+						&ltdiv class="fakeimg">Page image&lt/div>
+							&ltp>Info about image.&lt/p>
 							&lthr class="d-sm-none">
 						&lt/div>
 					&lt/div>
+					&lth3>Some Links&lt/h3>
+						&ltp>You can include links here to.&lt/p>
+						&ltul class="nav nav-pills flex-column">
+							&ltli class="nav-item">
+								&lta class="nav-link active" href="#">Active&lt/a>
+							&lt/li>
+							&ltli class="nav-item">
+								&lta class="nav-link" href="#">Link&lt/a>
+							&lt/li>
+							&ltli class="nav-item">
+								&lta class="nav-link" href="#">Link&lt/a>
+							&lt/li>
+							&ltli class="nav-item">
+								&lta class="nav-link disabled" href="#">Disabled&lt/a>
+							&lt/li>
+						&lt/ul>
 				&lt/div>
 
 				&ltdiv class="jumbotron text-center" style="margin-bottom:0">
-					&ltp>Footer&lt/p>
+					&ltp>Bottom of page for stuff&lt/p>
+					&ltp>Thanks to w3school.com for the bootstrap example&lt/p>
 				&lt/div>
 
 		&lt/body>
@@ -203,7 +207,7 @@
 
 	<script>
 		function runCode(){
-			$('#return').html("<iframe src=" + "data:text/html," + encodeURIComponent(editor.getValue()) + " width='550px' height='300px'></iframe>");
+			$('#return').html("<iframe src=" + "data:text/html," + encodeURIComponent(editor.getValue()) + " width='650px' height='300px'></iframe>");
 		}
 	</script>
 
