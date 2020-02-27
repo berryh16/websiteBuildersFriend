@@ -107,14 +107,31 @@
   		&ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">&lt/script>
 	&lt/head>
 	&ltbody style="background-color:#E6E6E6">
-		&ltp>Stuff&lt/p><!--Fix images-->
+		&ltp>This page will change the picture when you click the change button.
+		&ltbr>Then you can input 2 integers and click the calc button to caluclate the sum of the 2 numbers
+		&lt/p>
 		&ltbutton onclick="change()" id="btn" class="button">change&lt/button>
-		&ltimg id="img1" src="someImage.jpg">
+		&ltimg id="img1" src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1%26ixid=eyJhcHBfaWQiOjEyMDd9%26auto=format%26fit=crop%26w=500%26q=60" style="width:500px;height:150px;">
 		&ltscript>
 			function change(){
-				document.getElementById("img1").src="otherImage.jpeg";
+				document.getElementById("img1").src="https://images.unsplash.com/photo-1523629619140-ee5b56cb3b23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"; style="width:500px;height:150px;"
 			}
 		&lt/script>
+			&ltlabel for="a">Enter an integer&lt/label>
+    		&ltinput type="number" id="numA" min="0" max="1">&ltbr>&ltbr>
+			&ltlabel for="b">Enter an integer&lt/label>
+    		&ltinput type="number" id="numB" min="0" max="1">&ltbr>&ltbr>
+			&ltbutton onclick="calc()" id="btn2" class="button">calc&lt/button>
+		&ltscript>
+			<!--input example-->
+			function calc(){
+				var a = parseInt(document.getElementById("numA").value);
+				var b = parseInt(document.getElementById("numB").value);
+				var c = a + b;
+				window.alert(c);
+			}
+		&lt/script>
+		
 	&lt/body>
 &lt/html>
 </div><!--Needs to be hear so that we don't get stupid shit in editor on page-->

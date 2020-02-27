@@ -103,16 +103,47 @@
   		&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">&lt/script>
   		&ltscript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt/script>
   		&ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">&lt/script>
+		&ltscript>
+			$(document).ready(function(){
+  				$("#hide").click(function(){
+    				$("img").hide();
+  				});
+  				$("#show").click(function(){
+    				$("img").show();
+  				});
+			});
+			$(document).ready(function(){
+				$("#slideL").click(function(){
+					$("img").animate({left: '250px'});
+				});
+			});
+			$(document).ready(function(){
+				$("#slideR").click(function(){
+					$("img").animate({left: '0px'});
+				});
+			})
+			$(document).ready(function(){
+				$("#slideD").click(function(){
+					$("img").animate({top: '+=50px'});
+				});
+			});
+			$(document).ready(function(){
+				$("#slideU").click(function(){
+					$("img").animate({top: '-=50px'});
+				});
+			});
+		&lt/script>
 	&lt/head>
 	&ltbody style="background-color:#E6E6E6">
-		&ltp>Stuff&lt/p><!-- include JQuery shit -->
-		&ltbutton onclick="change()" id="btn" class="button">change&lt/button>
-		&ltimg id="img1" src="someImage.jpg">
-		&ltscript>
-			function change(){
-				document.getElementById("img1").src="otherImage.jpeg";
-			}
-		&lt/script>
+		&ltbutton id="hide">Hide&lt/button>
+		&ltbutton id="show">Show&lt/button>
+		&ltbutton id="slideL">Slide Left&lt/button>
+		&ltbutton id="slideR">Slide Right&lt/button>
+		&ltbutton id="slideU">Slide Up&lt/button>
+		&ltbutton id="slideD">Slide Down&lt/button>
+		&ltdiv>
+			&ltimg id="img1" src="https://upload.wikimedia.org/wikipedia/commons/9/99/SOME_LIKE_IT_HOT_TITLE.jpg" style="width:250px;height:150px;position:absolute;">
+		&lt/div>
 	&lt/body>
 &lt/html>
 </div><!--Needs to be hear so that we don't get stupid shit in editor on page-->

@@ -97,20 +97,84 @@
 			<div class="row">
 				<div class="col">
             		<div id="editor">&lt!DOCTYPE html>
-&lthtml>
-	&lthead>
-		&lttitle>TEST&lt/title>
-		&ltmeta charset="utf-8">
-  		&ltmeta name="viewport" content="width=device-width, initial-scale=1">
-  		&ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  		&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">&lt/script>
-  		&ltscript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt/script>
-  		&ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">&lt/script>
-	&lt/head>
-	&ltbody style="background-color:#E6E6E6">
-		&ltp>Stuff&lt/p><!-- include stuff with rows and columns and shit -->
-	&lt/body>
-&lt/html>
+	&lthtml lang="en">
+		&lthead>
+			&lttitle>Bootstrap 4 Website Example&lt/title>
+			&ltmeta charset="utf-8">
+			&ltmeta name="viewport" content="width=device-width, initial-scale=1">
+			&ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+			&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">&lt/script>
+			&ltscript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt/script>
+			&ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">&lt/script>
+			&ltstyle>
+				.fakeimg {
+					height: 200px;
+					background: #aaa;
+				}
+			&lt/style>
+		&lt/head>
+		&ltbody>
+
+			&ltdiv class="jumbotron text-center" style="margin-bottom:0">
+				&lth1>My First Bootstrap 4 Page&lt/h1>
+				&ltp>Resize this responsive page to see the effect!&lt/p> 
+			&lt/div>
+
+			&ltnav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				&lta class="navbar-brand" href="#">Navbar&lt/a>
+				&ltbutton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					&ltspan class="navbar-toggler-icon">&lt/span>
+				&lt/button>
+				&ltdiv class="collapse navbar-collapse" id="collapsibleNavbar">
+					&ltul class="navbar-nav">
+						&ltli class="nav-item">
+							&lta class="nav-link" href="#">Link&lt/a>
+						&lt/li>
+						&ltli class="nav-item">
+							&lta class="nav-link" href="#">Link&lt/a>
+						&lt/li>
+						&ltli class="nav-item">
+							&lta class="nav-link" href="#">Link&lt/a>
+						&lt/li>    
+					&lt/ul>
+				&lt/div>  
+			&lt/nav>
+
+			&ltdiv class="container" style="margin-top:30px">
+				&ltdiv class="row">
+					&ltdiv class="col-sm-4">
+						&lth2>About Me&lt/h2>
+						&lth5>Photo of me:&lt/h5>
+						&ltdiv class="fakeimg">Fake Image&lt/div>
+							&ltp>Some text about me in culpa qui officia deserunt mollit anim..&lt/p>
+							&lth3>Some Links&lt/h3>
+							&ltp>Lorem ipsum dolor sit ame.&lt/p>
+							&ltul class="nav nav-pills flex-column">
+								&ltli class="nav-item">
+									&lta class="nav-link active" href="#">Active&lt/a>
+								&lt/li>
+								&ltli class="nav-item">
+									&lta class="nav-link" href="#">Link&lt/a>
+								&lt/li>
+								&ltli class="nav-item">
+									&lta class="nav-link" href="#">Link&lt/a>
+								&lt/li>
+								&ltli class="nav-item">
+									&lta class="nav-link disabled" href="#">Disabled&lt/a>
+								&lt/li>
+							&lt/ul>
+							&lthr class="d-sm-none">
+						&lt/div>
+					&lt/div>
+				&lt/div>
+
+				&ltdiv class="jumbotron text-center" style="margin-bottom:0">
+					&ltp>Footer&lt/p>
+				&lt/div>
+
+		&lt/body>
+	&lt/html>
+
 </div><!--Needs to be hear so that we don't get stupid shit in editor on page-->
 				</div>
 				<div class="col">
