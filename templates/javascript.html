@@ -70,12 +70,12 @@
 		<h1>Website Builders Friend</h1>
 
 		<div class="topnav">
-		<a href="siteBuilderFriend">Home</a>
-		<a href="html">HTML</a>
-		<a href="bootstrap">BootStrap</a>
-  		<a class="active" href="javascript">JavaScript</a>
-		<a href="jquery">Jquery</a>
-		<a href="flask">Flask &amp PostgreSQL</a>
+		<a href="siteBuilderFriend.html">Home</a>
+		<a href="html.html">HTML</a>
+		<a href="bootstrap.html">BootStrap</a>
+  		<a class="active" href="javascript.html">JavaScript</a>
+		<a href="jquery.html">Jquery</a>
+		<a href="flask.html">Flask &amp PostgreSQL</a>
 		</div> 
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -83,10 +83,217 @@
         	<h2>JavaScript for when you want to add functions</h2>
 			<p>JavaScript is a scripting language that can and does run in you browser.
 			<br>In you HTML file you can add JavaScript in a &ltscript> tag(see below).
-			<br>Blah blah blah shit about JavaScript.
 			</p>
 
         </div>
+
+		<h3>The Fundamentals of JavaScript</h3>
+		<div>
+				<p>
+					Similar to the ongoing debate of CSS vs BootStrap, there is also a ongoing debate between JavaScript and Jquery.<br>
+					Wait... I know what you must be think: "Jquery" what is that?, well don't worry we will discuss that in another tab.<br>
+					<br>
+					JavaScript is the default scripting language for HTML and you may not know but it is always running in your browser.<br>
+					No, it doesn't require any downloads and best of all its free. So, why not learn how to use it's features to your own benefits. <br>
+				</p>
+
+				<h4>But what does JavaScript do exactly?</h4>
+				<p>
+					With JavaScript you will be able to edit HTML content, HTML attribute values, and you can even change HTML styles.<br>
+					JavaScript is similar to coding in C. So, if you know a little bit about writing in C programming syntax, you are already one step ahead!<br>
+					One example of how they are similar is that both JavaScript and C programming are capable of creating functions, objects, strings, arrays and list goes on. <br>
+					An important key note to remember is that similar to coding in C, JavaScript code must end in a semicolon (;). <br>
+				</p>
+
+				<h4>Where does JavaScript Go?</h4>
+				<p>
+					First, can you guess the tag that defines JavaScript? .....It should come as no suprise but it's in the name itself!<br>
+					JavaScript code is defined by the starting tag &ltscript> and the ending tag &lt/script>. <br>
+					The &ltscript>&lt/script> tags can be place in either the &lthead> tags or the &ltbody> tags. It can even be placed in both the &lthead> and &ltbody> tags. <br>
+					JavaScript can also be in a exterinal JavaScript file. The advangates of having JavaScript code in a external file is that separates HTML and JavaScript code. <br>
+					This makes it easier to distinguish between HTML and JavaScript, therefore making maintaining the two codes less of a headache. <br>
+					Finally, a big factor in having external files is that cached JavaScript files will speed up the amount of time it takes to load the page.
+				</p>
+
+				<p>
+					For more information about the basics of JavaScript, you can visit <a href="https://www.w3schools.com/js/js_intro.asp">www.w3schools.com</a>
+				</p>
+		</div>
+
+		<div>
+			<h3>How is JavaScript Shown?</h3>
+			<p>
+				All this juicy talk about JavaScript, but how do you show the data on your website? Easy! There are four methods of outputing information: <br>
+				<br>
+				&nbsp&nbsp&nbsp &nbsp 1: Writing into an HTML element, using <b><i>innerHTML</i></b><br>
+				&nbsp&nbsp&nbsp &nbsp 2: Writing into the HTML output using <b><i>document.write()</i></b><br>
+				&nbsp&nbsp&nbsp &nbsp 3: Writing into an alert box, using <b><i>window.alert()</i></b><br>
+				&nbsp&nbsp&nbsp &nbsp 4: Writing into the browser console, using <b><i>console.log()</i></b><br>
+			</p>
+
+			<p>
+				The first option: using <b><i>innerHTML</i></b>. To use this method, first you would get a HTML element by using the following JavaScript method: 
+				&nbsp&nbsp&nbsp <i>document.getElementById(id)</i> <br>
+				What the <i>id</i> attribute does is defines the HTML element. While innerHTML defines the HTML content.<br>
+				<br>
+				Here is a simple syntax: <br>
+				&nbsp&nbsp&nbsp &ltp>id="<i>name of id</i>"&lt/p> <br>
+				&nbsp&nbsp&nbsp &ltscript> <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp document.getElementById("<i>name of id</i>").innerHTML = "<i>your desired data</i>; <br>
+				&nbsp&nbsp&nbsp &lt/script> <br>
+			</p>
+
+			<p>
+				The second option: using <b><i>document.write()</i></b>. This method should be used <b>ONLY</b> for testing and should <b>NOT</b> be on your final website. <br>
+				The reason why this method is only used for testing is that using <b><i>document.write()</i></b> after the HTML document has been loaded, will <b>delete
+				the entire</b> HTML code. <br>
+				Please use with caution and only for testing purposes. <br>
+				<br>
+				Here is a simple syntax: <br>
+				&nbsp&nbsp&nbsp &ltscript> <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp window.alert("<i>Insert your desired info</i>"); <br>
+				&nbsp&nbsp&nbsp &lt/script> <br>
+			</p>
+
+			<p>
+				The third option: using <b><i>window.alert()</i></b>. Using this method will display an alert box or pop-up to display the desired information. <br>
+				<br>
+				Here is a simple syntax: <br>
+				&nbsp&nbsp&nbsp &ltscript> <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp window.alert("<i>Insert your desired info</i>"); <br>
+				&nbsp&nbsp&nbsp &lt/script> <br>
+			</p>
+
+			<p>
+				The fourth option: using <b><i>console.log()</i></b>. This method is mainly for debugging purposes and the data will not be directly displayed. <br>
+				To view the data you would need to right-click on the webpage and select "Inspect" on Google Chrome or "Inspect Element" on FireFox. <br>
+				From there you would select the console tab and the data will be displayed there.<br>
+				<br>
+				Here is a simple syntax: <br>
+				&nbsp&nbsp&nbsp &ltscript> <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp console.log("<i>Insert your desired info</i>"); <br>
+				&nbsp&nbsp&nbsp &lt/script> <br>				
+			</p>
+
+			<p>
+				For more information about the Outputs of JavaScript, you can visit <a href="https://www.w3schools.com/js/js_output.asp">www.w3schools.com</a>
+			</p>
+		</div>
+
+		<div>
+			<h3>Fundamentals of JavaScript Part 2</h3>
+			<div>
+				<h4>JavaScript Syntax</h4>
+				<p>	
+					An important note to consider when writing JavaScript code is to remember that JavaScript is that <b>CASE SENSITIVE!</b><br>
+					In JavaScript, identifiers are names that are used to name variables, keywords, functions or labels. Naming identifiers follows the same rule as most
+					programming languages. <br>
+					This means that the first character in names must be a letter or a underscore (_), or dollar sign ($).<br>
+					<br>
+					JavaScript has two definitions of values: first being "fixed values" and the second being "variable values". <br>
+					In JavaScript, fixed values are named "literals" and variable values are named "variables". <br>
+				</p>
+
+				<p>
+					For more information about the JavaScript Syntax, you can visit <a href="https://www.w3schools.com/js/js_syntax.asp">www.w3schools.com</a>
+				</p>
+			</div>
+
+			<div>
+				<h4>Variables in JavaScript</h4>
+				<p>	
+					Speaking of Variables, in JavaScript the keyword <b><i>var</i></b> is used to declare variables and the equal sign (=) is used to assign values to said variable.<br> This similar to other programming languages and is pretty straight forward. <br>
+					Example: <br>
+					&nbsp&nbsp&nbsp <i>var</i> x; &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This declares variable x.<br>
+					&nbsp&nbsp&nbsp x = 10; &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp And this will assign x to have a value of 10.<br>
+				</p>
+
+				<p>
+					Remember that JavaScript is case sensitive, so all variables are required (like other programming languages) to have unique names.
+				</p>
+
+				<p>
+					For more information about the JavaScript Variables, you can visit <a href="https://www.w3schools.com/js/js_variables.asp">www.w3schools.com</a>
+				</p>
+			</div>
+
+			<div>
+				<h4>Operators and Arithmetic</h4>
+				<div>
+					<h5>Operators in JavaScript</h5>
+						<p>	
+							Because JavaScript is similar to C, having operators in JavaScript is possible. Just like any other programming language, JavaScript has the following operators:<br>
+							&nbsp&nbsp&nbsp - Addition (+) <br>
+							&nbsp&nbsp&nbsp - Subtraction (-) <br>
+							&nbsp&nbsp&nbsp - Multiplication (*) <br>
+							&nbsp&nbsp&nbsp - Exponentiation (**) <br>
+							&nbsp&nbsp&nbsp - Division (/) <br>
+							&nbsp&nbsp&nbsp - Modulus or Remainder (%) <br>
+							&nbsp&nbsp&nbsp - Increment (+*) <br>
+							&nbsp&nbsp&nbsp - Decrement (--) <br>
+							&nbsp&nbsp&nbsp - Equal (=) <br>
+							&nbsp&nbsp&nbsp - x += y &nbsp&nbsp&nbsp which is equivalent to x = x + y <br>
+							&nbsp&nbsp&nbsp - x -= y &nbsp&nbsp&nbsp&nbsp which is equivalent to x = x - y  <br>
+							&nbsp&nbsp&nbsp - x *= y &nbsp&nbsp&nbsp&nbsp which is equivalent to x = x * y  <br>
+							&nbsp&nbsp&nbsp - x **= y &nbsp&nbsp&nbsp which is equivalent to x = x ** y  <br>
+							&nbsp&nbsp&nbsp - x /= y &nbsp&nbsp&nbsp&nbsp&nbsp which is equivalent to x = x / y  <br>
+							&nbsp&nbsp&nbsp - x %= y &nbsp&nbsp&nbsp which is equivalent to x = x % y 
+						</p>
+
+						<p>
+							The (+) operator can also be used with strings in JavaScript to concatenate two separate strings or even a number with a string. <br>
+							Of course, there are many more operators but we will only be discussing those listed.
+						</p>
+
+						<p>
+							For more information about the JavaScript Operators, you can visit <a href="https://www.w3schools.com/js/js_operators.asp">www.w3schools.com</a>
+						</p>
+				</div>
+
+				<div>
+					<h5>Arithmetic In JavaScript</h5>
+						<p>
+							Similar to operations in JavaScript, performing arithmetics in JavaScript follows the same ideas as all other programming languages.<br>
+							Numbers in the arithmetic operations are refered to as the <b><i>operands</i></b>. While the operations between the two <b><i>operands</i></b> is an <b><i>operator</i></b>. <br>
+							Preforming arithmetics is pretty straight-forward and follows the basics of arithmetic, so just like in algebra there is a operator precedence.
+						</p>
+
+						<p>
+							For more information about the JavaScript Arithmetic, you can visit <a href="https://www.w3schools.com/js/js_arithmetic.asp">www.w3schools.com</a>
+						</p>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<h3>The JavaScript Functions</h3>
+			<p>
+				A function in JavaScript is a section of code that will preform a specifc task. Similar to other programming languages, the function is only executed when called upon. <br>
+				<br>
+				In JavaScript, functions are defined by the <b><i>function</i></b> keyword. Which is then followed by the function name (I'll say it again: remember JavaScript is case sensitive!), <br> and then followed by parentheses (). Inside of the parentheses, is where the parameters of the fucntions would go. These parameters are called the <b><i>arguements</i></b> of the function.<br>
+
+			</p>
+
+			<p>
+				Here is the basic syntax of a fucntion: <br>
+				&nbsp&nbsp&nbsp <i>function</i> <i>functionName</i> (<i>parameter1, parameter2,...,parameterN</i>) { <br>
+				&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp . <br>
+				&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp . <br>
+				&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp . &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp "<i>code that executes</i>" <br>
+				&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp . <br>
+				&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp . <br>
+				&nbsp&nbsp&nbsp }
+			</p>
+
+			<p>
+				For more information about the JavaScript Arithmetic, you can visit <a href="https://www.w3schools.com/js/js_functions.asp">www.w3schools.com</a>
+			</p>
+		</div>
+
+	   	<div>
+	   		<h4>TO BE CONTINUED...</h4>
+	   			<p>Still interested in JavaScript? For more information about JavaScript you can visit <a href="https://www.w3schools.com/js/default.asp">www.w3schools.com</a> .</p>
+	   	</div>
 
         <h2>Try it yourself!</h2>
         <div class="panel-body">
