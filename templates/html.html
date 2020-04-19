@@ -70,31 +70,122 @@
 		<h1>Website Builders Friend</h1>
 
 		<div class="topnav">
-		<a href="siteBuilderFriend">Home</a>
-		<a class="active" href="html">HTML</a>
-		<a href="bootstrap">BootStrap</a>
-  		<a href="javascript">JavaScript</a>
-		<a href="jquery">Jquery</a>
-		<a href="flask">Flask &amp PostgreSQL</a>
+		<a href="siteBuilderFriend.html">Home</a>
+		<a class="active.html" href="html">HTML</a>
+		<a href="bootstrap.html">BootStrap</a>
+  		<a href="javascript.html">JavaScript</a>
+		<a href="jquery.html">Jquery</a>
+		<a href="flask.html">Flask &amp PostgreSQL</a>
 		</div>
     <div class="panel panel-default">
         <div class="panel-heading">
 		
-        	<h2>Basics of HTML</h2>
-			<p>HTML stands for HyperText Markup Language. It is the basic skeleton of any web page.</p>
+			<div>
+        		<h2>The Basics of HTML</h2>
+					<p>HTML stands for HyperText Markup Language. It is the basic skeleton of any web page.</p>
+			</div>
 
-		<h3>Body and Paragraphs</h3>
-		<p> The tag &ltbody> and &lt/body> is used to deined the body of the website. This is where the main content of your site
-		<br> will go.
-		</p>
+			<div>
+				<h3>HTML Documenting</h3>
+					<p> Every HTML element will mostly be a combination of a start tag and a end tag, where the info is between the tags.
+					<br> For exmample: &lt<i>tagname</i>> info &lt/<i>tagname</i>>
+					</p>
 
-		<h3>Headings</h3>
-		<p> In HTML, by default there are six levels of headings but you are not required to stay with these defaults.
-		<br> Headings consists of the tag &lth#>&lt/h#>, where # is a number ranging from 1 to 6. 
-		<br> The size of the heading are in decreasing order, with &lth1> being the largest heading and &lth6> being the smallest.
-		<br> If the default sizes are not to your picking, then you can futher edit the size to your liking.
-		</p>
-        </div>
+					<p>Every HTML document must include the following:<br>
+						&nbsp&nbsp&nbsp -&nbsp At the top of every HTML document is the document type declaration: &lt!DOCTYPE HTML><br>
+						&nbsp&nbsp&nbsp -&nbsp The tags &lthtml> (starting tag) and &lt/html> (ending tag) are the bounds of the HTML document where the body of document will be.<br>
+						&nbsp&nbsp&nbsp -&nbsp Speaking of the body, the tags &ltbody> and &lt/body> is where the main information will go for your website. We will go more in-depth on this later. <br>
+						<br>
+						For more information on HTML documenting and tags you can visit <a href="https://www.w3schools.com/tags/tag_comment.asp">www.w3schools.com</a>
+					</p>
+			</div>
+
+			<div>
+				<h3>Attributes in HTML</h3>
+					<p>
+						An HTML attribute provides more information about an HTML element. All HTML elements are capable of having attributes.<br>
+						They are always located within the start tag. Example: &lt <i>atrributename</i> and then <i>tagname</i>> info &lt/<i>tagname</i>><br>
+						Please refer to <a href="https://www.w3schools.com/html/html_attributes.asp">www.w3schools.com</a> for more information on attributes.
+					</p>
+
+				<h3>Sytles in HTML</h3>
+					<p>
+						Sytles are similar to attributes in HTML, they can further modify HTML elements.<br>
+						To set a sytle for an HTML element you would do the following: &lt<i>tagname</i> style="property:value;"><br>
+						There are many sytles that can be applied, for more information on styles you can visit <a href="https://www.w3schools.com/html/html_styles.asp">www.w3schools.com</a>
+					</p>
+			</div>
+
+			<div>
+				<h3>Body and Paragraphs in HTML</h3>
+					<p> Here we will go more in-depth on the body tags.<br>
+						The tag &ltbody> and &lt/body> is used to deined the contents of the website which will determine what will be displayed.<br>
+						This includes, but is not limited to: <br>
+						&nbsp&nbsp&nbsp -&nbsp The text that will be displayed, or what is better known as the paragraphs in HTML. <br>
+						&nbsp&nbsp&nbsp -&nbsp Images or Tables can also be shown as well as incorporating links to other websites and the list goes on.<br>
+						Of course, we will go over the basics of some of these.
+					</p>
+						
+					<p>	
+						So, how do you use paragraphs in HTML? <br>
+						Well, its rather simple. The start tag &ltp> is the beginning of the parapgraph and is closed with the end tag &lt/p>. <br>
+						Inbetween those tags would go the text that you wanted to be displayed. <br>
+						For example the following: &nbsp &ltp>Hello World&lt/p> &nbsp would display "Hello World" on the webpage. <br>
+						For more information on HTML body and paragraphs you can visit <a href="https://www.w3schools.com/tags/tag_body.asp">www.w3schools.com</a>
+					</p>
+			</div>
+
+		<p>For practice, you can refer to the Try it Yourself section at the bottom of this page.</p>
+
+			<div>
+				<h3>Headings in HTML</h3>
+					<p> In HTML, by default there are six levels of headings but you are not required to stay with these defaults.
+					<br> Headings consists of the tag &lth#>header name&lt/h#>, where # is a number ranging from 1 to 6. 
+					<br> The size of the heading are in decreasing order, with &lth1> being the largest heading and &lth6> being the smallest.
+					<br> If the default sizes are not to your picking, then you can futher edit the size to your liking. 
+					<br> But we are only going over the basics, for more information on HTML headings you can visit <a href="https://www.w3schools.com/html/html_headings.asp">www.w3schools.com</a>
+					</p>
+			</div>
+
+			<div>
+				<h3>Links in HTML</h3>
+					<p>
+						Want to include a link to your favorite website, an intreseting article, or maybe a youtube video?<br>
+						Well, worry not! Adding a link is entirely possible with HTML and here's how:<br>
+						In HTML links are hyperlinks that will jump to your desired website or document when clicked on.<br>
+						HTML links are recongized by the starting tag: &lta> and closing tag: &lt/a>. <br>
+						<br>
+						Use the following syntax:<br>
+						&nbsp&nbsp&nbsp &lta href="<i>url of desired link</i>"> <i>here is where you would put the link text</i> &lt/a> <br>
+					</p>
+
+					<p>
+						As you can see, HTML links uses attributes, namely the <b>"href"</b> is a attribute. <br>
+						The <b>"href"</b> attribute defines the address of the link. <br>
+						For more information on HTML Links you can visit <a href="https://www.w3schools.com/html/html_links.asp">www.w3schools.com</a>
+						<br> Can you guess how I linked the above?
+					</p>
+			</div>
+
+			<div>
+				<h3>Images in HTML</h3>
+					<p>
+						Unlike most HTML elements that require both a start tag and a end tag, the HTML image tag does not require a ending tag.<br>
+						Therefore, images in HTML are define with the &ltimg> tag. But just like links in HTML, a attribute is required with each &ltimg> tag. <br> 
+						To implement a HTLM image, use the follwoing syntax: &ltimg src="url"> , where "url" is the web address of the image. <br>
+						<br>
+						As you can see, a HTML image uses the attributes <b>"src"</b>. The <b>"scr"</b> attribute defines the address of the image. <br>
+						For more information on HTML Links you can visit <a href="https://www.w3schools.com/html/html_images.asp">www.w3schools.com</a>
+					</p>
+			</div>
+    </div>
+
+   	<div>
+   		<h4>TO BE CONTINUED...</h4>
+   			<p>We have only just scratch the surface of HTML, for more information about using HTML, please visit <a href="https://www.w3schools.com/html">www.w3schools.com</a> .</p>
+   	</div>
+
+
 
         <h2>Try it yourself!</h2>
         <div class="panel-body">
