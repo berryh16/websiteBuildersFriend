@@ -70,12 +70,12 @@
 		<h1>Website Builders Friend</h1>
 
 		<div class="topnav">
-		<a href="siteBuilderFriend">Home</a>
-		<a href="html">HTML</a>
-		<a class="active" href="bootstrap">BootStrap</a>
-  		<a href="javascript">JavaScript</a>
-		<a href="jquery">Jquery</a>
-		<a href="flask">Flask &amp PostgreSQL</a>
+		<a href="siteBuilderFriend.html">Home</a>
+		<a href="html.html">HTML</a>
+		<a class="active" href="bootstrap.html">BootStrap</a>
+  		<a href="javascript.html">JavaScript</a>
+		<a href="jquery.html">Jquery</a>
+		<a href="flask.html">Flask &amp PostgreSQL</a>
 		</div> 
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -83,11 +83,152 @@
         	<h2>Bootstrap soon to be your best friend</h2>
 			<p>Bootstrap is a open source CSS framework that will make designing the look of your website so much easier
 			<br>It is like an extention to your HTML. As you can see below there are a few extra libraries that you need to include.
-			<br>Also this thing known as JQuery. We will discuss this in a seperate tab
-			<br>Blah Blah Blah more stuff about bootstrap blah blah blah
+			<br>Also this thing known as JQuery. We will discuss this in a seperate tab.
 			</p>
 
         </div>
+
+        <div>
+        	<h3>What is CSS?</h3>
+	        	<p>
+	        		Before we get to know more about Bootstrap, lets take a step back and take a brief look at Cascading Style Sheets or better known as CSS. <br>
+	        		CSS is a language that defines the style of an HTML document. CSS is very beneficial because it cuts the amount of work need to be done and <br>
+	        		can be used to control the layout for multiple webpages. Not only does CSS help with styling your website, it also helps to define the <br>
+	        		design and layout for different devices as well. 
+	        		<br>
+	        		For more information on CSS you can visit <a href="https://www.w3schools.com/css/css_intro.asp">www.w3schools.com</a><br>
+	        	</p>
+
+	        	<p>
+	        		<h5>If CSS so good, why use Bootstrap?</h5>
+	        		Well, Bootstrap implements both HTML and CSS templates & plugins, so its the best of both worlds! <br>
+	        		Bootstrap is easy to use and its biggest selling points: it supports responsive web design features and is mobile friendly! <br> 
+	        		In other words: with responsive web design features, the webpage can automatically adjust to look good on all devices!
+	        	</p>
+
+	        	<p>
+	        		Because of their similarities, there is an ongoing debate of CSS vs BootStrap.
+	        	</p>
+        </div>
+
+        <div>
+        	<h3>Starting Out</h3>
+	        	<p>
+	        		What makes bootstrap able to be responsive to different devices is the &ltmeta> tag (there is no ending tag). <br>
+	        		What the &ltmeta> tag does, is that it gives the browser instruction on how to control a webpage's dimensions and scaling. <br>
+	        		Therefore, it is important to always include the &ltmeta> tag. The &ltmeta> tag is located inside of the &lthead> & &lt/head> tags at the top of the HTML document.<br>
+	        		Inside of the &ltmeta> tag is where you would set your desired scaling and dimensions for the webpage.<br>
+	        		<br>
+	        		What to include in of the &ltmeta> tag:<br>
+	        		&nbsp&nbsp&nbsp -&nbsp Charset UTF-8, represent any character in the Unicode standard and would look like this: &nbsp&nbsp&nbsp&nbsp &ltmeta charset="utf-8>
+	        		<br>OR<br>
+	        		&nbsp&nbsp&nbsp -&nbsp Charset UTF-16encode the entire Unicode repertoire, which looks like this: &nbsp&nbsp&nbsp&nbsp &ltmeta charset="utf-16><br>
+	        		<b>NOTE: Only ONE can be picked</b>
+	        	</p>
+	        	<p>	
+	        		Now in a separate &ltmeta> tag you can include the following: <br>
+	        		&nbsp&nbsp&nbsp -&nbsp “width=device-width” , this sets as you guess the width of the page to the screen-width of other devices. <br>
+	        		&nbsp&nbsp&nbsp -&nbsp  “initial-scale=1.0” , will set the initial zoom of the webpage. <br>
+	        		Now unlike charset, both “width=device-width” & “initial-scale=1.0” are inside of the same &ltmeta> tag. <br>
+	        		Which would look like this: &nbsp&nbsp&nbsp &ltmeta content=“width=device-width, initial-scale=1.0”><br>
+	        		<br>
+	        		For more information about starting out with Bootstrap, you can visit <a href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp">www.w3schools.com</a>
+	        	</p>
+        </div>
+
+		<div>
+			<h3>Bootstrap's Grid System and Containers</h3>
+			<div>
+				<h4>The Bootstrap Grid System</h4>
+					<p>
+						Bootstrap uses a grid system that is divided into twelve columns across the webpage. It is not required to used all twelve columns individually, <br>
+						so you can combine columns together creating bigger columns but the sum of must equal to twelve. In total there are five different grouping avaialable: <br>
+						<br>
+						&nbsp&nbsp&nbsp &nbsp 1: single columns, using all twelve columns individually. <br>
+						&nbsp&nbsp&nbsp &nbsp 2: three big columns, so you would have three columns with a span of four (<i> by "span of four", I mean four individual columns grouped together</i>).  
+						<br>
+						&nbsp&nbsp&nbsp &nbsp 3: two columns, one column with a span of four and another column with a span of eight. <br>
+						&nbsp&nbsp&nbsp &nbsp 4: two columns, two columns with a span of six. <br>
+						&nbsp&nbsp&nbsp &nbsp 5: a single column with a span of twelve. <br>
+						<br>
+						As you can see, all the possible groupings have a total sum of twelve columns. <br>
+					</p>
+
+					<p>
+						The Bootstrap grid system can further be defined by four classes: <br>
+						<br>
+						&nbsp&nbsp&nbsp -&nbsp xs (for phones - screens less than 768px wide) <br>
+						&nbsp&nbsp&nbsp -&nbsp sm (for tablets - screens equal to or greater than 768px wide) <br>
+						&nbsp&nbsp&nbsp -&nbsp md (for small laptops - screens equal to or greater than 992px wide) <br>
+						&nbsp&nbsp&nbsp -&nbsp lg (for laptops and desktops - screens equal to or greater than 1200px wide) <br>
+					</p>
+
+					<h5>Sytnax for Bootstrap Grid System</h5>
+					<p>
+						&nbsp&nbsp&nbsp &ltdiv class="row"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbs&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<i>This creates a row</i> <br>
+
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltdiv class="col-*-*">&lt/div> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i>This creates a column, where "-*-*" is the class and the number of columns.</i> <br>
+
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp .  <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp . 
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<i>Continue adding your desire columns, but remember the sum MUST BE twelve.</i> <br>
+
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp .  <br>
+						&nbsp&nbsp&nbsp &lt/div> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br>
+					</p>
+
+					<p>
+						<b>Using the above sytnax, we will be creating a simple grid system with a class of sm using grouping #2:</b><br>
+						<br>
+						&nbsp&nbsp&nbsp &ltdiv class="row"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This creates a row <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltdiv class="col-*-*">&lt/div> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This creates a column with a span of 4 <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltdiv class="col-*-*">&lt/div> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This creates a column with a span of 4 <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltdiv class="col-*-*">&lt/div> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This creates a column with a span of 4 <br>
+						&nbsp&nbsp&nbsp &lt/div> <br>
+					</p>
+
+					<p>
+						For more information about the Bootstrap Grid System, you can visit <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp">www.w3schools.com</a>
+					</p>
+			</div>
+
+			<div>
+				<h4>Containers in Bootstrap</h4>
+					<p>
+						Containers are used to pad the content inside of them, and there are two container classes that are available:<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - the <i>.container</i> class is a <b>fixed</b> width container that can have it's width edited. <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - the <i>.container-fluid</i> class is a container that spans the entire width of the webpage. <br>
+					</p>
+
+					<p>
+						<b>Syntax of .container:</b><br>
+						&nbsp&nbsp&nbsp &ltdiv class="container"><br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltp> <i>your desired info</i> &lt/p <br>
+						&nbsp&nbsp&nbsp &lt/div> <br>
+
+					</p>
+
+					<p>
+						<b>Syntax of .container-fluid:</b><br>
+						&nbsp&nbsp&nbsp &ltdiv class="container-fluid"><br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltp> <i>your desired info</i> &lt/p <br>
+						&nbsp&nbsp&nbsp &lt/div> <br>
+
+					</p>
+
+					<p>
+						For more information about the Bootstrap Containers, you can visit <a href="https://www.w3schools.com/bootstrap4/bootstrap_containers.asp">www.w3schools.com</a>
+					</p>
+			</div>
+		</div>
+
+	   	<div>
+	   		<h4>TO BE CONTINUED...</h4>
+	   			<p>This is just the some of the basics of Bootstrap, for more information about Bootstrap, please visit <a href="https://www.w3schools.com/bootstrap/default.asp">www.w3schools.com</a> .</p>
+	   	</div>
 
         <h2>Try it yourself!</h2>
         <div class="panel-body">
