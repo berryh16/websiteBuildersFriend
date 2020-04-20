@@ -70,21 +70,198 @@
 		<h1>Website Builders Friend</h1>
 
 		<div class="topnav">
-		<a href="siteBuilderFriend">Home</a>
-		<a href="html">HTML</a>
-		<a href="bootstrap">BootStrap</a>
-  		<a href="javascript">JavaScript</a>
-		<a class="active" href="jquery">Jquery</a>
-		<a href="flask">Flask &amp PostgreSQL</a>
+		<a href="siteBuilderFriend.html">Home</a>
+		<a href="html.html">HTML</a>
+		<a href="bootstrap.html">BootStrap</a>
+  		<a href="javascript.html">JavaScript</a>
+		<a class="active" href="jquery.html">Jquery</a>
+		<a href="flask.html">Flask &amp PostgreSQL</a>
 		</div> 
     <div class="panel panel-default">
         <div class="panel-heading">
 		
         	<h2>JQuery like bootstrap for JavaScript</h2>
-			<p>Blah blah blah shit about JQuery.
-			</p>
 
-        </div>
+			<h3>The Fundamentals of JQuery</h3>
+			<div>
+					<h4>What is JQuery?</h4>
+						<p>
+							JQuery is a lightweight library for JavaScript, that very much like BootStrap and CSS will make it easier for JavaScript code to be used in your website. <br>
+							How JQuery accomplishes this is by wrapping multiple lines of JavaScript code that perform a task into methods in a single line of code. <br>
+							<br>
+							There are two ways to implement JQuery. <br>
+
+							&nbsp&nbsp&nbsp 1. Download JQuery. There are two verisons avaialabe to download: a Production Version and a Development Verion. <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Note</b>: Make sure to have the download files in the same directory as the pages you want to incorporate it with. <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp For more information about downloading JQuery, you can visit <a href="https://www.w3schools.com/jquery/jquery_get_started.asp">www.w3schools.com</a> <br>
+							<br>
+							&nbsp&nbsp&nbsp 2. Include it from Content Delivery Network (CDN). Two of the most popular ways of using JQuery with a CDN is with either Gooogle or Microsoft. <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To implement JQuery with Google use the following code: <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &lthead> <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">&lt/script> <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &lt/head> <br>
+							<br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To implement JQuery with Microsoft use the following code: <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &lthead> <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltscript src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js">&lt/script> <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &lt/head>						
+						</p>
+
+					<p>
+						For more information starting out with JQuery, you can visit <a href="https://www.w3schools.com/jquery/jquery_get_started.asp">www.w3schools.com</a>
+					</p>
+
+					<h4>JQuery Syntax</h4>
+						<p>
+							JQuery syntax is special that it tailored made for selecting HTML elements and performing "actions" on them. <br>
+
+							<br>
+							This is done with the following basic syntax: <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b><i>$(selector).action()</i></b> <br>
+							<br>
+
+							Where the <b><i>$</i></b> is used to define or access JQuery. <br>
+							In place of the <b><i>(selector)</i></b> would be what element you are looking for. <br>
+							The <b><i>action()</i></b> in JQuery is the "action" that is to be preformed on the HTML element(s).<br>
+							<br>
+							For more information about JQuery Syntax, you can visit <a href="https://www.w3schools.com/jquery/jquery_syntax.asp">www.w3schools.com</a>	
+						</p>
+
+					<p>
+						For more information about the basics of JQuery, you can visit <a href="https://www.w3schools.com/jquery/jquery_get_started.asp">www.w3schools.com</a>
+					</p>						
+
+			</div>
+
+			<h3>The Magic of JQuery</h3>
+			<div>
+					<h4>Effects with JQuery</h4>
+						<p>
+							With JQuery you are able to include a varity of effects onto your website and because of that we will only be going over a few of the more popular effects.
+						</p>
+
+					<div>
+					<h4>Hide and Seek</h4>
+						<p>
+							Now you see me and now you don't.
+						</p>
+
+						<p>
+							Using JQuery, you are able to hide and show HTML elements. In JQuery to do this you would use the <b><i>hide()</i></b> and <b><i>show()</i></b> methods.<br>
+							The syntax for <b><i>hide()</i></b> and <b><i>show()</i></b> methods are as follows: <br> 
+							<br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).hide(speed,callback);</i></b> <br>
+							<br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).show(speed,callback);</i></b>
+						</p>
+
+						<p>
+							The <i>speed</i> parameter defines the speed at which the effect is displayed on the website. This parameter can be set as <i>"slow"</i>, <i>"fast"</i>, or it can also be in <i>miliseconds</i>. <br>
+							While the <i>callback</i> parameter is in fact a function that is executed after <b><i>hide()</i></b> or <b><i>show()</i></b> methods .<br>
+						</p>
+
+						<p>
+							What if you want to use both the <b><i>hide()</i></b> and <b><i>show()</i></b> methods? <br>
+							Worry Not! In JQuery, you are able to switch between hiding and showing an element by using the <b><i>toggle()</i></b> method! <br>
+							Just use the folllwing syntax for the <b><i>toggle()</i></b> method: <br>
+							<br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).toggle(speed,callback);</i></b> <br>
+						</p>
+					
+						<p>
+							For more information about <b><i>hide()</i></b> or <b><i>show()</i></b> effects with JQuery, you can visit <a href="https://www.w3schools.com/jquery/jquery_hide_show.asp">www.w3schools.com</a>
+						</p>
+					</div>
+
+					<div>
+					<h4>Sliding into those......</h4>
+						<p>
+							With this simple effect, you will easily.... Oh wait.... nevermind. <br>
+						</p>
+
+						<p>
+							Not only is sliding HTML elements possible with JQuery, but you can also slide HTML Elements up or down! <br>
+							Just like the <b><i>hide()</i></b> and <b><i>show()</i></b> methods, you are also capable of switching between sliding up or down. <br>
+							In fact, the sliding methods in JQuery follow the same syntax as the <b><i>hide()</i></b> and <b><i>show()</i></b> methods. <br>
+						</p>
+
+						<p>
+							To implement the sliding effects, the syntax is rather simple, just follow the below examples: <br>
+							<br>
+							First: Sliding Up <br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).slideUp(speed,callback);</i></b> <br>
+							<br>
+
+							Second: Sliding Down <br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).slideDown(speed,callback);</i></b> <br>
+							<br>
+
+							Third: Toggling <br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).slideToggle(speed,callback);</i></b> <br>
+							<br>
+						</p>
+
+						<p>
+							Similar to the <b><i>hide()</i></b> and <b><i>show()</i></b> methods, the parameters are the same.<br>
+							The <i>speed</i> parameter defines the speed at which the effect is displayed on the website. This parameter can be set as <i>"slow"</i>, <i>"fast"</i>, or it can also be in <i>miliseconds</i>. <br>
+							While the <i>callback</i> parameter is in fact a function that is executed after <b><i>hide()</i></b> or <b><i>show()</i></b> methods .<br>
+						</p>
+
+						<p>
+							For more information about Sliding in JQuery, you can visit <a href="https://www.w3schools.com/jquery/jquery_slide.asp">www.w3schools.com</a>
+						</p>
+					</div>
+
+					<div>
+					<h4>I don't feel so good....</h4>
+						<p>
+							Noooooooooooo! You're fading away!!! <br>
+							<br>
+							You guessed it! With JQuery a fading effect can also be applied onto HTML elements and just like the others fading in JQuery follows the same aspects.<br>
+							With JQuery you are able to fade elements in and out of visibility separately or by switching between the two.
+						</p>
+
+						<p>
+							To implement the fading effects, the syntax is just like the rest: <br>
+							<br>
+							First: Sliding Up <br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).fadeIn(speed,callback);</i></b> <br>
+							<br>
+
+							Second: Sliding Down <br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).fadeOut(speed,callback);</i></b> <br>
+							<br>
+
+							Third: Toggling <br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).fadeToggle(speed,callback);</i></b> <br>
+							<br>
+						</p>
+
+						<p>
+							It should come as no surpise now; the parameters are the same.<br>
+							The <i>speed</i> parameter defines the speed at which the effect is displayed on the website. This parameter can be set as <i>"slow"</i>, <i>"fast"</i>, or it can also be in <i>miliseconds</i>. <br>
+							While the <i>callback</i> parameter is in fact a function that is executed after <b><i>hide()</i></b> or <b><i>show()</i></b> methods .<br>
+						</p>
+
+						<p>
+							BUT! There is one new method! In JQuery it is possible to fade a HTLM element to a certain opactiy. <br>
+							By 
+							To implement the <b><i>fadeTo()</i></b> method, the syntax is just like the rest but with one parameter added: <br>
+							<br>
+							First: Sliding Up <br>
+							&nbsp&nbsp&nbsp<b><i>$(selector).fadeIn(speed,opacity,callback);</i></b> <br>
+							<br>
+							Where the <i>opacity</i> parameter specifies the fading to a given opacity between the ranges of 0 and 1.
+						<p>
+							For more information about Fading in JQuery, you can visit <a href="https://www.w3schools.com/jquery/jquery_fade.asp">www.w3schools.com</a>
+						</p>
+					</div>
+			</div>
+			
+	   	<div>
+	   		<h4>TO BE CONTINUED...</h4>
+	   			<p>For more information about JQuery you can visit <a href="https://www.w3schools.com/jquery/default.asp">www.w3schools.com</a> .</p>
+	   	</div>
 
         <h2>Try it yourself!</h2>
         <div class="panel-body">
