@@ -77,25 +77,118 @@
 		<h1>Website Builders Friend</h1>
 
 		<div class="topnav">
-		<a href="siteBuilderFriend">Home</a>
-		<a href="html">HTML</a>
-		<a href="bootstrap">BootStrap</a>
-  		<a href="javascript">JavaScript</a>
-		<a href="jquery">Jquery</a>
-		<a class="active" href="flask">Flask &amp PostgreSQL</a>
+		<a href="siteBuilderFriend.html">Home</a>
+		<a href="html.html">HTML</a>
+		<a href="bootstrap.html">BootStrap</a>
+  		<a href="javascript.html">JavaScript</a>
+		<a href="jquery.html">Jquery</a>
+		<a class="active" href="flask.html">Flask &amp PostgreSQL</a>
 		</div> 
     <div class="panel panel-default">
         <div class="panel-heading">
-			<div class="col-sm-4">
-			</div>
+    			<div class="col-sm-4">
+    			</div>
 
-			<div class="col-sm-4">
-        	<h2>Flask. God damn more Python</h2>
-			<p>Flask is a microweb frame work built with python. It basically is the back-end for a web application.
-			<br>You can define app routes for handling what happens when the user changes pages or submits something.
-			<br>Flask can also be used for handling any database you application uses.
-			</p>
-			</div>
+    			<div class="col-sm-4">
+            	<h2>Flask. God damn more Python</h2>
+          			<p>Flask is a microweb frame work built with python. It basically is the back-end for a web application.
+          			<br>You can define app routes for handling what happens when the user changes pages or submits something.
+          			<br>Flask can also be used for handling any database you application uses.
+          			</p>
+    			</div>
+
+          <div>
+            <h3>First an Introduction of Python</h3>
+              <p>
+                Python is a very popular, powerful and effective object-oriented programming language that provides high-level data structures. <br>
+                But don't let that scare you away, Python is actually pretty simple and a easy to learn programming language. <br>
+                With Python you are able to create web applications on the server, it can be connected to a database system to modified files, <br>
+                and can even be used for solving complex mathematics.
+              </p>
+
+            <h4>Why is Python Popular?</h4>
+              <p>
+                Well, if the above didn't sell you to start learning Python then here are a few more reasons as to why it's so popular. <br>
+                &nbsp&nbsp&nbsp 1 : The syntax used in Python is based similarly to the English language. <br>
+                &nbsp&nbsp&nbsp 2 : Due to the unique syntax that Python uses, it requires less lines of code to be written. Trust me, this is a big factor! <br>
+                &nbsp&nbsp&nbsp 3 : Python can be used on a number of platforms. Windows, Mac, or Linux are just to name a few. <br>
+                &nbsp&nbsp&nbsp 4 : Prototyping in Python is rather quick because Python runs on an interpreter system. <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This basically means that the code is executable as soon as it is written! 
+              </p>
+
+              <p>If you are insterested in learning more about Python, you can visit the official Python website at: <a href="https://www.python.org/">python.org</a> .</p>
+          </div>
+
+          <div>
+            <h3>Now lets learn some Flask!</h3>
+              <h4>Starting Out</h4>
+                <p>
+                  If you know the basic of HTML and Python, you are already ahead of the curve!<br>
+                  <br>
+                  <b>NOTE:</b> It is require that you have Python installed already, but many PCs and Macs will already have Python installed. <br>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To check if you have Python install on Windows, open up a ternimal and put in the following command line: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp \<i>Users</i>\<i>Your Name</i>><i>python --version </i><br>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To check if you have Python install on Mac or Linux, open up a ternimal and put in the following command line: &nbsp&nbsp <i>python --version</i> <br>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp If you do not have Python install, you can visit <a href="https://www.python.org/">python.org</a>
+                </p>
+
+                <p>
+                    Flask does not have built-in abstraction layer for database handling. <br>
+                    Instead it aims to keep the core of an application simple yet extensible. <br>
+                    To do this, Flask supports extensions to add functionality to the application.
+                </p>
+
+                <p>For more information on Flask you can visit <a href="https://www.tutorialspoint.com/flask/flask_overview.htm">www.tutorialspoint.com</a> .</p>
+          </div>
+
+          <div>
+            <h3>Flask Application</h3>
+              <p>
+                It is important to always import the Flask module into your Flask projects. <br>
+                To import Flask, just do the following at the top of all documents you are planning to use with Flask: &nbsp&nbsp&nbsp <i>from flask import Flask</i> <br>
+              </p>
+
+            <h4>Route Method</h4> 
+              <p>
+                The route() function in Flask is a decorator, this means it tells the application which URL it should call for the associated function. <br>
+                <br>
+                Example: &nbsp&nbsp&nbsp <i>app.route(rule, options)</i> <br>
+                <br>
+                The <b>rule</b> parameter defines the URL binding for the function and the <b>options</b> parameter is a list of parameters to be forwarded to the <b>Rule</b>object.
+              </p>
+
+            <h4>Run Method</h4>
+              <p>
+                This method runs the application on the local devlopment server. <br>
+                <br>
+                Example: &nbsp&nbsp&nbsp <i>app.run(host, port, debug, options)</i> <br>
+                <br>
+                The <b>host</b> parameter is the hostname that the server is listening to. By default it is: 127.0.0.1, this is referred to as the localhost. <br>
+                Similarly, the <b>port</b> parameter is the port number. By default this is set to: 5000. <br>
+                The <b>debug</b> parameter by default will always be set to <b>false</b>. We will discuss more on this later. <br>
+                The <b>options</b> paramter, just means to be forwarded to the underlying Werkzeug server.
+                <br>
+                <b>NOTE:</b> All parameters listed are optional.
+              </p>
+
+              <p>For more information about Flask Application you can visit <a href="https://www.tutorialspoint.com/flask/flask_application.htm">www.tutorialspoint.com</a> .</p>
+          </div>
+
+          <div>
+            <h3>Debug Mode in Flask</h3>
+              <p>
+                To enable <b>Debug</b> mode on Flask, you would edit the <b>debug</b> property for the <br> application object to be <b>True</b> before running or passing the <b>debug</b> parameter to the <b>run()</b> method. Once activated the debugger will track any errors in the application.<br>
+                <br>
+                The following sytanx is what it would look like implemented: <br>
+                &nbsp&nbsp&nbsp <i>app.debug = True</i> <br>
+                &nbsp&nbsp&nbsp <i>app.run()</i> <br>
+                &nbsp&nbsp&nbsp <i>app.run(debug = True)</i> <br>
+              </p>
+          </div>
+
+          <div>
+            <h4>TO BE CONTINUED...</h4>
+              <p>For more information Flask you can visit <a href="https://www.tutorialspoint.com/flask/index.htm">www.tutorialspoint.com</a> .</p>
+          </div>
 
         </div>
 			<p></p>
